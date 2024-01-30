@@ -80,7 +80,7 @@ socket.on('taskDeleted',(data=>{
 
   const port = process.env.PORT || 4000;
 
-  httpServer.listen(port, () => {
+  httpServer.listen(port,'0.0.0.0' ,() => {
     console.log(`task-managemnet app listening on port ${port}`);
   });
   
